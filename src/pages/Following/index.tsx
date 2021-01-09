@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
-import { View } from 'react-native';
-import { FlatList } from 'react-native-gesture-handler';
+import { FlatList, View } from 'react-native';
 import CategoryList from '../../components/CategoryList';
+import StreamList from '../../components/StreamList';
+import ChannelList from '../../components/ChannelList';
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
 import Title from '../../components/Title';
@@ -11,7 +12,7 @@ import { Container, Wrapper, Main} from './styles';
 
 interface Item {
   key: string;
-  render: ()=> JSX.Element;
+  render : () => JSX.Element;
   isTitle?: boolean;
 }
 
@@ -39,7 +40,7 @@ const Following: React.FC = () => {
       },
       {
         key:'C2',
-        render: () => <View />
+        render: () => <StreamList />
       },
       {
         key: 'CONTINUE_WATCHING',
@@ -48,7 +49,7 @@ const Following: React.FC = () => {
       },
       {
         key:'C3',
-        render: () => <View />
+        render: () => <ChannelList />
       },
       {
         key: 'OFFLINE_CHANNELS',

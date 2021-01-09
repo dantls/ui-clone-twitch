@@ -1,13 +1,13 @@
 import React from 'react';
-import CategoryItem, { ItemProps } from '../CategoryItem';
+import CategoryItem from '../CategoryItem';
 import data from './data';
 
 import { List } from './styles';
 
-const CategoryList: React.FC<ItemProps> = () => {
+const CategoryList: React.FC = () => {
   return (
     <List>
-      {data.map(item => (
+      {data.map((item) => (
         <CategoryItem key={item.name} item={item}/>
       ))}
     </List>

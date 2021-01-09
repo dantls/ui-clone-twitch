@@ -10,8 +10,9 @@ export const Container = styled.View`
 `;
 
 
-export const Avatar = styled.View`
+export const Avatar = styled.TouchableOpacity`
   background: ${colors.tag};
+  margin-left: 10px;
   width: 32px;
   height: 32px;
   border-radius: 16px;
@@ -27,7 +28,7 @@ export const OnlineStatus = styled.View`
   bottom: 0;
   right: 0;
 `;
-export const Button = styled.View`
+export const Button = styled.TouchableOpacity`
   margin-left: 20px;
 `;
 export const RightSide = styled.View`

@@ -1,6 +1,3 @@
-`src/components/CategoryList/data.ts`
-
-```ts
 import lol from '../../images/category_lol.jpg';
 import valorant from '../../images/category_valorant.jpg';
 import csgo from '../../images/category_csgo.jpg';
@@ -16,4 +13,3 @@ export default [
   { name: 'Fall Guys', source: fallguys },
   { name: 'Apex Legends', source: apex },
 ];
-```

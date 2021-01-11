@@ -7,16 +7,17 @@ export const Container = styled.TouchableOpacity`
 export const CategoryImage = styled.Image`
   width: 98px;
   height:130px;
+  border-radius: 5px;
 `;
 export const CategoryName = styled.Text`
   margin-top: 5px;
   max-width: 98px;
-  color: ${colors.black};
+  color: ${({theme}) => theme.colors.black};
   font-family: roboto_700;
   font-size: 13.5px;
 `;
 export const RedCircle = styled.View`
-  background: ${colors.red};
+  background: ${({theme}) => theme.colors.red};
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
@@ -24,7 +25,7 @@ export const RedCircle = styled.View`
 export const Info = styled.Text`
   margin-left: 4px;
   padding-bottom: 1px;
-  color: ${colors.gray};
+  color: ${({theme}) => theme.colors.gray};
   font-family: roboto_500;
 
 

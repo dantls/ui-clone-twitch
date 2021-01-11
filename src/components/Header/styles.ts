@@ -9,27 +9,26 @@ export const Container = styled.View`
   padding: 14px 14px 0 0;
 `;
 
-
 export const Avatar = styled.TouchableOpacity`
-  background: ${colors.tag};
+  background: ${({theme}) => theme.colors.tag};
   margin-left: 10px;
   width: 32px;
   height: 32px;
   border-radius: 16px;
 `;
 export const OnlineStatus = styled.View`
-  background: ${colors.green};
+  background: ${({theme}) => theme.colors.green};
   width: 10px;
   height: 10px;
   border-radius: 10px;
 
-  border: 2px solid ${colors.primary};
+  border: 2px solid ${({theme}) => theme.colors.primary};
   position: absolute;
   bottom: 0;
   right: 0;
 `;
 export const Button = styled.TouchableOpacity`
-  margin-left: 20px;
+  margin-right: 20px;
 `;
 export const RightSide = styled.View`
   flex-direction: row;

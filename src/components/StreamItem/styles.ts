@@ -15,6 +15,7 @@ export const StreamColumn = styled.View`
 export const StreamThumbnail = styled.Image`
   width: 119px;
   height: 66px;
+  border-radius : 5px;
 `;
 export const StreamRow = styled.View`
   height: 66px;
@@ -28,18 +29,18 @@ export const StreamAvatar = styled.View`
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background: ${colors.tag}
+  background: ${({theme}) => theme.colors.tag}
 `;
 export const StreamUsername = styled.Text`
-  color: ${colors.black};
+  color: ${({theme}) => theme.colors.black};
   margin-left: 5px;
   font-family: roboto_700;
 `;
 export const StreamDescription = styled.Text`
-  color: ${colors.black};
+  color: ${({theme}) => theme.colors.black};
 `;
 export const StreamCategory = styled.Text`
-  color: ${colors.gray};
+  color: ${({theme}) => theme.colors.gray};
   font-family: roboto_500;
 `;
 export const TagRow = styled.View`
@@ -47,13 +48,14 @@ export const TagRow = styled.View`
   flex-direction: row;
 `;
 export const TagView = styled.View`
-  background: ${colors.tag};
+  background: ${({theme}) => theme.colors.tag};
   padding: 2px 8px;
   border-radius: 10px;
   margin-right: 5px;
 `;
 export const TagText = styled.Text`
-  color: ${colors.black};
+  color: ${({theme}) => theme.colors.light  };
+ 
   font-family: roboto_500;
   font-size: 13px;
 `;

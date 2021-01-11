@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { AppLoading } from 'expo';
+
 import {
   Roboto_400Regular,
   Roboto_500Medium,
@@ -8,9 +8,11 @@ import {
   useFonts,
 } from '@expo-google-fonts/roboto';
 
-import Routes from './src/routes';
+import Routes from './src/routes/';
+import { ThemeContextProvider } from './src/contexts/toggleTheme';
 
-export default function App() {
+const App: React.FC = () => {
+
   let [fontsLoaded] = useFonts({
     roboto_400: Roboto_400Regular,
     roboto_500: Roboto_500Medium,
@@ -20,11 +22,10 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />;
   }
-
   return (
-    <>
-      <Routes />
-      <StatusBar style="light" />
-    </>
+    <ThemeContextProvider>
+       <Routes />
+    </ThemeContextProvider>  
   );
 }
+export default App;

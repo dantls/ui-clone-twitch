@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 import colors from '../../styles/colors';
 
 export const Container = styled.Text`
-  color: ${colors.gray};
-  background: ${colors.primary};
+  color: ${({theme}) => theme.colors.gray};
+  background: ${({theme}) => theme.colors.primary};
 
   font-family: roboto_700;
   font-size: 14px;

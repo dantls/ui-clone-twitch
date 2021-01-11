@@ -9,7 +9,7 @@ import {
 } from '@expo-google-fonts/roboto';
 
 import Routes from './src/routes/';
-import { ThemeContextProvider } from './src/contexts/toggleTheme';
+import AppProvider from './src/contexts';
 
 const App: React.FC = () => {
 
@@ -23,9 +23,9 @@ const App: React.FC = () => {
     return <AppLoading />;
   }
   return (
-    <ThemeContextProvider>
+    <AppProvider>
        <Routes />
-    </ThemeContextProvider>  
+    </AppProvider>  
   );
 }
 export default App;

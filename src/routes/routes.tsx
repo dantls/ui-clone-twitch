@@ -6,7 +6,6 @@ import Following from '../pages/Following';
 import ComingSoon from '../pages/ComingSoon';
 
 import { Ionicons, MaterialCommunityIcons} from '@expo/vector-icons';
-import colors from '../styles/colors';
 import useToggleTheme from '../hooks/useToggleTheme';
 
 const { Navigator, Screen } = createBottomTabNavigator();

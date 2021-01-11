@@ -24,7 +24,7 @@ export const light: DefaultTheme = {
     tag: '#323235',
     green: '#14b866',
     red: '#ec1414',
-    purple: '#bf94ff',
+    purple: '#7159c3',
     light: '#fff',
   }
 };
@@ -38,7 +38,7 @@ export const dark: DefaultTheme = {
     tag: '#323235',
     green: '#14b866',
     red: '#ec1414',
-    purple: '#bf94ff',
+    purple: '#7159c3',
     light: '#fff',
   }
 }

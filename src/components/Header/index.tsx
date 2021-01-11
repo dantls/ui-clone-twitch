@@ -38,13 +38,23 @@ const Header: React.FC = () => {
             color={theme.colors.black}
           />
         </Button>
-        <Switch
-          trackColor={{ false : theme.colors.gray, true: theme.colors.tag }}
-          thumbColor={ false ? "#f4f3f4" : "#f4f3f4"}
-          ios_backgroundColor="#f4f3f4"
-          onValueChange={toggleTheme}
-          value={theme.title === 'dark'? false : true}
-        />
+        <Button onPress={toggleTheme}>
+          {theme.title === 'light' 
+          ?
+            <Feather 
+              name="moon"
+              size={26}
+              color={theme.colors.black}
+            /> 
+          :
+            <Feather 
+              name="sun"
+              size={26}
+              color={theme.colors.black}
+            />
+          }
+        </Button>
+       
       </RightSide>
      
     </Container>
